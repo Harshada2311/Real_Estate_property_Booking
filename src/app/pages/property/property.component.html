@@ -1,0 +1,93 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-8">
+            <div class="card">
+                <div class="card-header ">
+                    <h6>Property List</h6>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Sr.no</th>
+                                        <th>Propert Type</th>
+                                        <th>Action</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    @for (item of gridData; track $index) {
+                                    <tr>
+                                        <td>{{$index+1}}</td>
+                                        <td>{{item.propertyType}}</td>
+                                        <td class="text-center">
+                                            <button class=" btn btn-warning" (click)="onEdit(item)">Edit</button>
+                                            <button class=" btn btn-danger mx-2"
+                                                (click)="onDelete(item.propertTypeId)">Delete</button>
+                                        </td>
+
+                                    </tr>
+
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <div class="card-header">
+                    Add Customer
+                </div>
+                <div class="card-body">
+                    <form [formGroup]="form">
+                        <div class="row">
+                            <div class="col-12">
+                                <label for="">Proprty Type</label>
+                                <input type="text" formControlName="propertyType" class="form-control">
+
+                                @if (form.controls['propertyType'].touched) {
+                                <div class="text-danger">
+                                    @if(form.controls['propertyType'].errors?.['required']) {
+                                    <span>Property Type is required</span>
+
+                                    }
+                                    @if(form.controls['propertyType'].errors?.['minlength']) {
+                                    <span>Property Type should be minimum 3 characters</span>
+
+                                    }
+                                </div>
+                                }
+
+
+
+                            </div>
+                            <div class="row pt-2">
+                                <div class="col-6 text-center ">
+                                    @if (form.controls['propertyType'].value==0) {
+                                    <button type="button" (click)="onSave()" [disabled]="form.invalid"
+                                        class="btn btn-primary">Add Property</button>
+                                    }
+                                    @else {
+                                    <button type="button" (click)="onUpdate()" [disabled]="form.invalid"
+                                        class="btn btn-warning">Update Property</button>
+                                    }
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

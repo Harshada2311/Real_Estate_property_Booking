@@ -1,0 +1,66 @@
+<div class="parent">
+    <div class="dashboard-container">
+        <div class="main-content">
+            <header class="topbar">
+                <h1>Dashboard</h1>
+                <div class="user-info">
+                    <p>Welcome, User</p>
+                    <a href="#">Logout</a>
+                </div>
+            </header>
+            <div class="content">
+                <div class="card">
+                    <h3>Sites</h3>
+                    <p>10+ active Sites</p>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Projects</h3>
+                        <p>10+ active projects</p>
+                    </div>
+                    <div class="card">
+                        <h3>Property</h3>
+                        <p>50+ Property</p>
+                    </div>
+                    <div class="card">
+                        <h3>Booking Details</h3>
+                        <p>Select Boking ID</p>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Table -->
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>SelectedBookingID</th>
+                            <th>Customer ID</th>
+                            <th>Total Amount</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>
+                            <select id="siteDropdown" class="form-select" [(ngModel)]="bookingID" (change)="getProperties()">
+                              <option value="" selected>Select a customer</option>
+                              <option *ngFor="let item of booking$ | async" [value]="item.bookingId">
+                                {{ item.bookingId }}
+                              </option>
+                            </select>
+                          </td></tr>
+                        <tr *ngFor="let booking of bookingList">
+                            <td>{{booking.bookingId}}</td>
+                            <td>{{ booking.custId }}</td>
+                            <td>{{ booking.totalAmont }}</td>
+                            
+                        
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
