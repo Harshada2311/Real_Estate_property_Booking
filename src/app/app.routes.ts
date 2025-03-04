@@ -5,6 +5,7 @@ import { PropertyComponent } from './pages/property/property.component';
 import { LayoutComponent } from './pages/layout/layout.component';
 import { SiteComponent } from './pages/site/site.component';
 import { BookingComponent } from './pages/booking/booking.component';
+import { EmployeeDataComponent } from './pages/employee-data/employee-data.component';
 
 export const routes: Routes = [
     {
@@ -36,6 +37,11 @@ export const routes: Routes = [
                 path:'Booking',
                 component: BookingComponent,
                 title:'Booking'
+            },
+            {
+                path:'employee-data',
+                component: EmployeeDataComponent,
+                title:'Employee Data'
             }
         ]
     }
