@@ -1,0 +1,113 @@
+<div class="container mt-4">
+    <h2 class="text-center">Employee Management</h2>
+
+    <!-- Add Employee Button -->
+    <button class="btn btn-primary mb-3" (click)="openModel()">Add Employee</button>
+
+    <!-- Employee Table -->
+    <table class="table table-bordered text-center">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Contact</th>
+                <th>City</th>
+                <th>Address</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="employeeTable">
+            @for (item of employeeList; track $index) {
+                <tr>
+                    <td>{{ $index + 1 }}</td>
+                    <td>{{ item.firstName }}</td>
+                    <td>{{ item.lastName }}</td>
+                    <td>{{ item.email }}</td>
+                    <td>{{ item.contact }}</td>
+                    <td>{{ item.city }}</td>
+                    <td>{{ item.address }}</td>
+                    <td>
+                        <button class="btn btn-warning" (click)="editEmployee(item)">Edit</button>
+                        <button class="btn btn-danger" (click)="deleteEmployee(item)">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<!-- Bootstrap Modal for Add/Edit Employee -->
+<div class="model" #empModel tabindex="-1" aria-labelledby="modalLabel" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel">Add Employee</h5>
+                <button type="button"  (click)="closeModel()"  class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+            </div>
+            <div class="modal-body">
+                <div id="employeeForm">
+                    <input type="hidden" id="employeeId">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label class="form-label">First Name</label>
+                                <input type="text" [(ngModel)]="employeeObj.firstName" name="first" class="form-control" id="firstName" required>
+                            </div>
+
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label class="form-label">Last Name</label>
+                                <input type="text" [(ngModel)]="employeeObj.lastName" class="form-control" id="lastName" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label class="form-label">Email</label>
+                                <input type="email" [(ngModel)]="employeeObj.email" class="form-control" id="email" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label class="form-label">Contact</label>
+                                <input type="text" [(ngModel)]="employeeObj.contact" class="form-control" id="contact" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label class="form-label">City</label>
+                                <input type="text" [(ngModel)]="employeeObj.city" class="form-control" id="city" required>
+                            </div>
+                            
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <label class="form-label">Address</label>
+                                <input type="text" [(ngModel)]="employeeObj.address" class="form-control" id="address" required>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                        @if (employeeObj.employeeId==0) {
+                            <button type="submit" (click)="onSave()" class="btn btn-primary">Save</button>
+                        } @else {
+                            <button type="submit" (click)="onUpdate()" class="btn btn-warning">UpdateEmployee</button>
+                        }
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

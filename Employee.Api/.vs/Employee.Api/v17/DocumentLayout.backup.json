@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Harshada Shinde\\Desktop\\react\\Angular\\Employee.Api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FC4A4944-7F2F-4EAA-8D9B-D36A0F9F7272}|Employee.Api\\Employee.Api.csproj|c:\\users\\harshada shinde\\desktop\\react\\angular\\employee.api\\employee.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC4A4944-7F2F-4EAA-8D9B-D36A0F9F7272}|Employee.Api\\Employee.Api.csproj|solutionrelative:employee.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC4A4944-7F2F-4EAA-8D9B-D36A0F9F7272}|Employee.Api\\Employee.Api.csproj|c:\\users\\harshada shinde\\desktop\\react\\angular\\employee.api\\employee.api\\controllers\\employeedatascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC4A4944-7F2F-4EAA-8D9B-D36A0F9F7272}|Employee.Api\\Employee.Api.csproj|solutionrelative:employee.api\\controllers\\employeedatascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC4A4944-7F2F-4EAA-8D9B-D36A0F9F7272}|Employee.Api\\Employee.Api.csproj|c:\\users\\harshada shinde\\desktop\\react\\angular\\employee.api\\employee.api\\model\\employeedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC4A4944-7F2F-4EAA-8D9B-D36A0F9F7272}|Employee.Api\\Employee.Api.csproj|solutionrelative:employee.api\\model\\employeedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC4A4944-7F2F-4EAA-8D9B-D36A0F9F7272}|Employee.Api\\Employee.Api.csproj|c:\\users\\harshada shinde\\desktop\\react\\angular\\employee.api\\employee.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FC4A4944-7F2F-4EAA-8D9B-D36A0F9F7272}|Employee.Api\\Employee.Api.csproj|solutionrelative:employee.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC4A4944-7F2F-4EAA-8D9B-D36A0F9F7272}|Employee.Api\\Employee.Api.csproj|c:\\users\\harshada shinde\\desktop\\react\\angular\\employee.api\\employee.api\\model\\employeedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC4A4944-7F2F-4EAA-8D9B-D36A0F9F7272}|Employee.Api\\Employee.Api.csproj|solutionrelative:employee.api\\model\\employeedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmployeeDatasController.cs",
+              "DocumentMoniker": "C:\\Users\\Harshada Shinde\\Desktop\\react\\Angular\\Employee.Api\\Employee.Api\\Controllers\\EmployeeDatasController.cs",
+              "RelativeDocumentMoniker": "Employee.Api\\Controllers\\EmployeeDatasController.cs",
+              "ToolTip": "C:\\Users\\Harshada Shinde\\Desktop\\react\\Angular\\Employee.Api\\Employee.Api\\Controllers\\EmployeeDatasController.cs",
+              "RelativeToolTip": "Employee.Api\\Controllers\\EmployeeDatasController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAqwB8AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T18:24:52.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Harshada Shinde\\Desktop\\react\\Angular\\Employee.Api\\Employee.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Employee.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\Harshada Shinde\\Desktop\\react\\Angular\\Employee.Api\\Employee.Api\\Program.cs*",
+              "RelativeToolTip": "Employee.Api\\Program.cs*",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T18:22:34.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmployeeData.cs",
+              "DocumentMoniker": "C:\\Users\\Harshada Shinde\\Desktop\\react\\Angular\\Employee.Api\\Employee.Api\\Model\\EmployeeData.cs",
+              "RelativeDocumentMoniker": "Employee.Api\\Model\\EmployeeData.cs",
+              "ToolTip": "C:\\Users\\Harshada Shinde\\Desktop\\react\\Angular\\Employee.Api\\Employee.Api\\Model\\EmployeeData.cs",
+              "RelativeToolTip": "Employee.Api\\Model\\EmployeeData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T18:17:32.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Harshada Shinde\\Desktop\\react\\Angular\\Employee.Api\\Employee.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "Employee.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\Harshada Shinde\\Desktop\\react\\Angular\\Employee.Api\\Employee.Api\\appsettings.json",
+              "RelativeToolTip": "Employee.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-04T18:14:15.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Harshada Shinde\\Desktop\\react\\Angular\\Employee.Api\\Employee.Api\\Model\\EmployeeDbContext.cs",
+              "RelativeDocumentMoniker": "Employee.Api\\Model\\EmployeeDbContext.cs",
+              "ToolTip": "C:\\Users\\Harshada Shinde\\Desktop\\react\\Angular\\Employee.Api\\Employee.Api\\Model\\EmployeeDbContext.cs",
+              "RelativeToolTip": "Employee.Api\\Model\\EmployeeDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T18:10:20.943Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
